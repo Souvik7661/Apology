@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Arial Rounded MT', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at center, #fff0f5, #ffc0cb, #ff69b4);
+}
+
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+.center-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  animation: fadeIn 2s ease forwards;
+}
+
+.center-box h1 {
+  font-size: 2em;
+  color: #e91e63;
+}
+
+.center-box input {
+  padding: 10px 15px;
+  width: 250px;
+  border: 2px solid #e91e63;
+  border-radius: 10px;
+  font-size: 1em;
+  outline: none;
+}
+
+.center-box button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.center-box button:hover,
+.forgive-btn:hover {
+  background: #d81b60;
+}
+
+#apologyScreen {
+  background-image: url('https://i.pinimg.com/736x/fc/81/e0/fc81e08472344aba1fe6ae9bf15338d4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.apology-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 20px;
+  animation: fadeInUp 1.5s ease forwards;
+  max-width: 90%;
+  text-align: center;
+}
+
+.apology-box h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ffcdd2;
+}
+
+.apology-message {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.forgive-btn {
+  padding: 12px 25px;
+  font-size: 1.1em;
+  background: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "particles": {
+    "number": {
+      "value": 30,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "shape": {
+      "type": "image",
+      "image": {
+        "src": "https://i.pinimg.com/736x/1f/b9/ba/1fb9ba78a8cda7a748c46667d28f5e1c.jpg",
+        "width": 32,
+        "height": 32
+      }
+    },
+    "opacity": {
+      "value": 0.8,
+      "random": true
+    },
+    "size": {
+      "value": 20,
+      "random": true
+    },
+    "line_linked": {
+      "enable": false
+    },
+    "move": {
+      "enable": true,
+      "speed": 1.5,
+      "direction": "none",
+      "out_mode": "out"
+    }
+  },
+  "retina_detect": true
+}
